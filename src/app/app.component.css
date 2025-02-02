@@ -1,0 +1,6 @@
+:root {
+    --main-color: #252750
+}
+.main-color {
+    color: var(--main-color);
+}

@@ -1,0 +1,32 @@
+
+<div class="container mx-auto">
+     <h1 class="text-2xl my-5 font-bold">All Products</h1>
+     <hr>
+     
+    <div class="row">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            @for (product of products; track $index) {
+                <div class=" bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                    <a (click)="viewDetails(product.id)" class="cursor-pointer">
+                        <img class="rounded-t-lg h-[250px] mx-auto object-contain" [src]="product.image" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a (click)="viewDetails(product.id)" class="cursor-pointer">
+                            <h5 class="mb-2 text-xl font-bold tracking-tight text-green-700 dark:text-white text-center">{{product.title.split(" ", 3).join(" ")}}</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{product.description.split(" ", 4).join(" ")}}...</p>
+                        <button (click)="viewDetails(product.id)" class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-md hover:bg-blue-800">
+                            Details
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                            </svg>
+                          </button>
+                        <span class="float-end"> <b>{{product.price}}$</b> </span>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+</div>
+
