@@ -3,7 +3,7 @@
 This is an Angular 19 project that fetches products from the FakeStoreAPI and displays them in a grid. Users can also view specific product details by clicking the "Details" button.
 
 ## 🚀 Live Demo
-[Click here to view the live demo](#) *(Replace with actual link)*
+[Click here to view the live demo](https://nassermansour-2024.github.io/task/home) *(Replace with actual link)*
 
 ## 📜 Features
 - Fetches and displays products from FakeStoreAPI.
