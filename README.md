@@ -52,7 +52,7 @@ src/
 ### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/nassermansour-2024/task
-cd angular-products-app
+cd Task_Elevate
 ```
 
 ### 2️⃣ Install Dependencies
